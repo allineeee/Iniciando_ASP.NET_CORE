@@ -79,3 +79,4 @@
 - in-process hosting, out-of-process hosting, nginx
 - pipeline do asp.net
 - extesions metodos c#
+- package manager console: add-migration Alunos -> update-database
