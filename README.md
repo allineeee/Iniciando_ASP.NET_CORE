@@ -20,7 +20,7 @@
 ## Como funciona
 
 - roda do lado do servidor
-- envia informações (request) para o servidor, e recebe responses que pode ser HTML, JSON...
+- envia informações (request) para o servidor, e recebe responses que podem ser HTML, JSON...
 
 
 ### Versionamento
@@ -47,13 +47,20 @@
 }
 ```
 
+## Middleware
 
+- componentes que manipulam dados entre os requests e responses
+- pode trabalhar lado a lado com outros middlewares
+- request -> middlewares -> response (a orderm dos middlewares importam)
  
 
 ## Pesquisar mais
 
 - ASP -> 1996
+- asp.net core o que é
 - .NET standard library e outros TFMs
 - IIS Express (lauchSettings)
 - logLevel: trace, bebug, information...
 - criar funções inline c#
+- perfis de execução, launchSettings, appsettings
+- pipeline, middleware (mvc middleware, identity middleware, logging middleware)
