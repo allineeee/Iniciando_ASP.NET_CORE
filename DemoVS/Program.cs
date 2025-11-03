@@ -1,3 +1,4 @@
+using DemoVS;
 // Configuração Builder
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,9 +12,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 
+app.UseMiddleware<LogTempoMiddleware>();
+
+
 // Configuração de comportamentos da App
 
 app.MapGet("/", () => "Hello World!");
-app.MapGet("/teste", () => "Isso é um teste");
+app.MapGet("/teste", () =>
+{
+    Thread.Sleep(1500);
+    return "Isso é um teste";
+});
 
 app.Run();
