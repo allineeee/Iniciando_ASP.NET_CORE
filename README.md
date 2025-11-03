@@ -21,7 +21,15 @@
 - envia informações (request) para o servidor, e recebe responses que pode ser HTML, JSON...
 
 
+### Versionamento
 
+- Major -> versão principal (breaking change)
+- Minor -> features novas (not breaking)
+- Patch -> correções de bugs.. (not breaking)
+
+
+## 
+ 
 
 ## Pesquisar mais
 
