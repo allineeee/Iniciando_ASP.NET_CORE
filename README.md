@@ -64,3 +64,4 @@
 - criar funções inline c#
 - perfis de execução, launchSettings, appsettings
 - pipeline, middleware (mvc middleware, identity middleware, logging middleware)
+- primary constructor
