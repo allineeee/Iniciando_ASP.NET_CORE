@@ -47,11 +47,21 @@
 }
 ```
 
+
 ## Middleware
 
 - componentes que manipulam dados entre os requests e responses
 - pode trabalhar lado a lado com outros middlewares
 - request -> middlewares -> response (a orderm dos middlewares importam)
+
+
+## Hosting
+
+
+## Pipeline
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/dda18ebe-7329-4b11-b535-06a123db241b" />
+
  
 
 ## Pesquisar mais
@@ -65,3 +75,7 @@
 - perfis de execução, launchSettings, appsettings
 - pipeline, middleware (mvc middleware, identity middleware, logging middleware)
 - primary constructor
+- middleware, hosting, kestrel
+- in-process hosting, out-of-process hosting, nginx
+- pipeline do asp.net
+- extesions metodos c#
