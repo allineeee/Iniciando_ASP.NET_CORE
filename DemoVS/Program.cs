@@ -1,9 +1,14 @@
 using DemoVS;
+
+
 // Configuração Builder
 
 var builder = WebApplication.CreateBuilder(args);
 
 //Configuração do Pipeline
+
+builder.AddSerilog();
+builder.Services.AddControllersWithViews();
 
 //Middlewares
 //Services
@@ -11,6 +16,8 @@ var builder = WebApplication.CreateBuilder(args);
 //Configuração da App
 
 var app = builder.Build();
+
+app.UseLogTempo();
 
 app.UseMiddleware<LogTempoMiddleware>();
 

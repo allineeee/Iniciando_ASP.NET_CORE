@@ -50,4 +50,20 @@ namespace DemoVS
 
         }
     }
+
+    public static class SerilogExtensions
+    {
+        public static void AddSerilog(this WebApplicationBuilder builder)
+        {
+            builder.Host.UseSerilog();
+        }
+    }
+
+    public static class LogTempoMiddlewareExtension
+    {
+        public static void UseLogTempo(this WebApplication app)
+        {
+            app.UseMiddleware<LogTempoMiddleware>();
+        }
+    }
 }
