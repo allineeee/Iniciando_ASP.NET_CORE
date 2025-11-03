@@ -54,3 +54,6 @@
 
 - ASP -> 1996
 - .NET standard library e outros TFMs
+- IIS Express (lauchSettings)
+- logLevel: trace, bebug, information...
+- criar funções inline c#
