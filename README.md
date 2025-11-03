@@ -2,9 +2,11 @@
 
 ## Teoria
 
-- .NET -> plataforma de desenvolvimento
+- .NET -> plataforma de desenvolvimento, e é multiplataforma
 - Pode desenvolver aplicações para: Web, Mobile, Desktop, Microsserviços, Cloud, M.L, Games, IoT
 - ASP.NET é um componente do .NET usado para desenvolver apps e páginas Web.
+- ASP.NET 7M de requisições/seg. Plataforma web mais rápida.
+- open-source
 
 
 ## Organização do ASP.NET
