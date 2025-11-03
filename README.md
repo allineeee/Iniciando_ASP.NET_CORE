@@ -80,3 +80,6 @@
 - pipeline do asp.net
 - extesions metodos c#
 - package manager console: add-migration Alunos -> update-database
+- blazor não usa javascript???
+- blazor -> dom, blazon usa dom por isso a tela não pisca (refresh)? signalIR
+- blazor server x blazor webassembly
