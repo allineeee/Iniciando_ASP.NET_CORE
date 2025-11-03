@@ -30,9 +30,27 @@
 - Patch -> correções de bugs.. (not breaking)
 
 
-## 
+## Gerenciando versões
+
+```diff
+  dotnet --info
+  dotnet --list-sdks
+  dotnet --version
+```
+- global.json ("força" uma versão específica):
+```json
+{
+  "projects": ["src"],
+  "sdk": {
+      "version": "^6.0.201"
+  }
+}
+```
+
+
  
 
 ## Pesquisar mais
 
 - ASP -> 1996
+- .NET standard library e outros TFMs
