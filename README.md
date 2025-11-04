@@ -99,6 +99,9 @@
 
   app.Run();
 ```
+- MVC Middleware ->	Invoca controllers e retorna views ou JSON
+- Identity Middleware ->	Faz autenticação/autorização
+- Logging Middleware ->	Registra requisições e exceções
 
 
 ## Perfis de Execução
@@ -128,7 +131,13 @@
 
 ## Hosting
 
-
+- host -> ambiente que executa a aplicação
+- criação do host no program.cs:
+```csharp
+  var builder = WebApplication.CreateBuilder(args);
+  var app = builder.Build();
+  app.Run();
+```
 
 
 
@@ -141,17 +150,13 @@
 
 
 
-- templates (asp net core empty, razor pages, mvc, Blazor Server, Blazor WebAssembly, web api, minimal api)
 
-- pipeline, middleware (mvc middleware, identity middleware, logging middleware)
 
--  hosting
-- in-process hosting, out-of-process hosting, nginx
-- pipeline do asp.net
-
-- blazor não usa javascript???
+- o que é blazor
 - blazor -> dom, blazon usa dom por isso a tela não pisca (refresh)? comunicação signalIR
+- o que é dom
 - blazor server x blazor webassembly
+- o que é mininal api
 - pwa e spa
 
 
