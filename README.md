@@ -50,15 +50,35 @@
 
 ## Middleware
 
-- componentes que manipulam dados entre os requests e responses
+- componentes que manipulam dados entre os requests (chega do cliente) e responses (vai voltar ao cliente)
 - pode trabalhar lado a lado com outros middlewares
-- request -> middlewares -> response (a orderm dos middlewares importam)
+```csharp
+  // context contém os dados da requisição (headers, path, user...)
+  app.Use(async (context, next) =>
+  {
+      Console.WriteLine("Antes do próximo middleware");
+      await next(); // chama o próximo middleware
+      Console.WriteLine("Depois do próximo middleware");
+  });
+```
+- request -> middlewares (middleware 1, middleware 2, middleware 3...) -> response (a orderm dos middlewares importam)
+- ordem em que adiciona os middlewares define o comportamento do pipeline
+- pipeline é a sequência de middlewares executados na requisição
+- exemplo de pipeline (a requisição passa por uma sequência ordenada):
+```csharp
+  app.UseRouting();
+  // se UseAuthorization vier antes de UseAuthentication, dá erro, pois o usuário precisa estar autenticado
+  app.UseAuthentication();
+  app.UseAuthorization();
+  app.UseEndpoints(...);
+```
+
 
 
 ## Hosting
 
 
-## Pipeline
+
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/dda18ebe-7329-4b11-b535-06a123db241b" />
 
