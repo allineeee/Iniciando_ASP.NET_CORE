@@ -119,7 +119,12 @@
 ```
 - Program.cs -> define comportamento e pipeline
 
-## IIS
+
+## Servidores WEB (IIS Express, Kestrel, Nginx)
+
+- IIS Express -> servidor web leve, nativo do windows, usado no Visual Studio durante o desenvolvimento
+- Kestrel -> servidor web interno do ASP.NET Core, cross-platform. É obrigatório usá-lo em todas as aplicações ASP.NET Core, mesmo se existir outros servidores (IIS e Nginx)
+- Nginx -> servidor nativo no Linux
 
 ## Hosting
 
@@ -135,8 +140,7 @@
 
 
 
-- IIS Express , kestrel, servidor nativo, nginx
-- qual o padrao de pasta e arquivos de uma aplicação asp net comum empty
+
 - templates (asp net core empty, razor pages, mvc, Blazor Server, Blazor WebAssembly, web api, minimal api)
 
 - pipeline, middleware (mvc middleware, identity middleware, logging middleware)
