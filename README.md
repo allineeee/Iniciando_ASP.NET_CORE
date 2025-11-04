@@ -8,6 +8,9 @@
 - ASP.NET 7M de requisições/seg. Plataforma web mais rápida.
 - open-source
 - O ASP.NET entrega diversos tipos de aplicação Web atendendo todas as necessidades.
+- ASP (Active Server Pages) -> 1996
+- APP.NET CORE -> subistituiu o ASP.NET Framework (rodava só em windows). É possível criar APIs, sites, SPAs, Blazor apps e microsserviços
+- TFM (Target Framework Moniker) indica qual versão do .NET o projeto está usando
 
 
 ## Organização do ASP.NET
@@ -22,6 +25,7 @@
 
 - roda do lado do servidor
 - envia informações (request) para o servidor, e recebe responses que podem ser HTML, JSON...
+- pode criar, compilar... projetos com o .NET CLI (Command Line Interface)
 
 
 ### Versionamento
@@ -97,6 +101,7 @@
 ```
 
 
+## IIS
 
 ## Hosting
 
@@ -108,10 +113,10 @@
 
 ## Pesquisar mais
 
-- ASP -> 1996
-- .net cli
-- asp.net core o que é
-- .NET standard library e outros TFMs
+
+
+
+
 - IIS Express (lauchSettings)
 - o que é kestrel? e servidor nativo
 - nginx
