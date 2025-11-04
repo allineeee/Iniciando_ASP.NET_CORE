@@ -143,21 +143,5 @@
 
  
 
-## Pesquisar mais
-
-
-
-
-
-
-
-
-- o que é blazor
-- blazor -> dom, blazon usa dom por isso a tela não pisca (refresh)? comunicação signalIR
-- o que é dom
-- blazor server x blazor webassembly
-- o que é mininal api
-- pwa e spa
-
 
 
