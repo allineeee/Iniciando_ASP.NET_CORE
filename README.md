@@ -139,6 +139,11 @@
   app.Run();
 ```
 
+## Minimal API
+
+- não utiliza controllers
+
+
 
 
  
