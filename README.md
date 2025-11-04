@@ -83,3 +83,4 @@
 - blazor não usa javascript???
 - blazor -> dom, blazon usa dom por isso a tela não pisca (refresh)? comunicação signalIR
 - blazor server x blazor webassembly
+- pwa e spa
