@@ -137,21 +137,18 @@
 
 - IIS Express , kestrel, servidor nativo, nginx
 - qual o padrao de pasta e arquivos de uma aplicação asp net comum empty
-
+- templates (asp net core empty, razor pages, mvc, Blazor Server, Blazor WebAssembly, web api, minimal api)
 
 - pipeline, middleware (mvc middleware, identity middleware, logging middleware)
 
-- middleware, hosting, kestrel
+-  hosting
 - in-process hosting, out-of-process hosting, nginx
 - pipeline do asp.net
 
-- package manager console: add-migration Alunos -> update-database
 - blazor não usa javascript???
 - blazor -> dom, blazon usa dom por isso a tela não pisca (refresh)? comunicação signalIR
 - blazor server x blazor webassembly
 - pwa e spa
-- o que são minimal api
-- templates asp.net (mvc, razor pages, blazor (server e web assembly), web api...)
-- qual o padrao de pasta e arquivos de uma aplicação asp net mvc, webapi, razor pages, blazor
-- Kestrel, IIS, Nginx
+
+
 
