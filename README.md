@@ -105,3 +105,4 @@
 - blazor server x blazor webassembly
 - pwa e spa
 - o que são minimal api
+- templates asp.net (mvc...)
