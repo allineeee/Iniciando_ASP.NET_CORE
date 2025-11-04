@@ -81,5 +81,5 @@
 - extesions metodos c#
 - package manager console: add-migration Alunos -> update-database
 - blazor não usa javascript???
-- blazor -> dom, blazon usa dom por isso a tela não pisca (refresh)? signalIR
+- blazor -> dom, blazon usa dom por isso a tela não pisca (refresh)? comunicação signalIR
 - blazor server x blazor webassembly
