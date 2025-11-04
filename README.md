@@ -7,6 +7,7 @@
 - ASP.NET é um componente do .NET usado para desenvolver apps e páginas Web.
 - ASP.NET 7M de requisições/seg. Plataforma web mais rápida.
 - open-source
+- O ASP.NET entrega diversos tipos de aplicação Web atendendo todas as necessidades.
 
 
 ## Organização do ASP.NET
@@ -87,12 +88,16 @@
 ## Pesquisar mais
 
 - ASP -> 1996
+- .net cli
 - asp.net core o que é
 - .NET standard library e outros TFMs
 - IIS Express (lauchSettings)
+- o que é kestrel? e servidor nativo
+- nginx
+- qual o padrao de pasta e arquivos de uma aplicação asp net comum empty
 - logLevel: trace, bebug, information...
 - criar funções inline c#
-- perfis de execução, launchSettings, appsettings
+- perfis de execução, launchSettings, appsettings, program.cs
 - pipeline, middleware (mvc middleware, identity middleware, logging middleware)
 - primary constructor
 - middleware, hosting, kestrel
@@ -105,4 +110,6 @@
 - blazor server x blazor webassembly
 - pwa e spa
 - o que são minimal api
-- templates asp.net (mvc...)
+- templates asp.net (mvc, razor pages, blazor (server e web assembly), web api...)
+- qual o padrao de pasta e arquivos de uma aplicação asp net mvc, webapi, razor pages, blazor
+
