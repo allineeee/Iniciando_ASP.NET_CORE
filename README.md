@@ -16,7 +16,7 @@
 ## Organização do ASP.NET
 
 - O ASP.NET entrega sites (razor) e serviços de integração
-- RAZOR incorpora código c# em páginas HTML
+- RAZOR incorpora código c# em páginas HTML (.cshtml)
 - IDENTITY -> usado para autorização e autenticação
   <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/bf5236c2-f8b4-4df0-a65e-3d860fbe1b9c" />
 
@@ -101,6 +101,24 @@
 ```
 
 
+## Perfis de Execução
+
+- launchSettings -> define como iniciar o servidor e o ambiente
+- appsettings -> define quais configurações serão usadas
+```csharp
+  // appsettings.Development.json
+  // configurações apenas para o ambiente de desenvolvimento e não de produção
+  {
+    "Logging": {
+      "LogLevel": {
+        "Default": "Debug" // Trace, Debug, Information
+      }
+    }
+  }
+
+```
+- Program.cs -> define comportamento e pipeline
+
 ## IIS
 
 ## Hosting
@@ -117,19 +135,16 @@
 
 
 
-- IIS Express (lauchSettings)
-- o que é kestrel? e servidor nativo
-- nginx
+- IIS Express , kestrel, servidor nativo, nginx
 - qual o padrao de pasta e arquivos de uma aplicação asp net comum empty
-- logLevel: trace, bebug, information...
-- criar funções inline c#
-- perfis de execução, launchSettings, appsettings, program.cs
+
+
 - pipeline, middleware (mvc middleware, identity middleware, logging middleware)
-- primary constructor
+
 - middleware, hosting, kestrel
 - in-process hosting, out-of-process hosting, nginx
 - pipeline do asp.net
-- extesions metodos c#
+
 - package manager console: add-migration Alunos -> update-database
 - blazor não usa javascript???
 - blazor -> dom, blazon usa dom por isso a tela não pisca (refresh)? comunicação signalIR
