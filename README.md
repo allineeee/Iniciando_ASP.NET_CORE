@@ -49,7 +49,7 @@
 ```
 
 
-## Middleware
+## Middleware/Pipeline de requisições
 
 - componentes que manipulam dados entre os requests (chega do cliente) e responses (vai voltar ao cliente)
 - pode trabalhar lado a lado com outros middlewares
@@ -73,6 +73,28 @@
   app.UseAuthorization();
   app.UseEndpoints(...);
 ```
+- a imagem abaixo mostra o fluxo que uma requisição HTTP percorre dentro da aplicação ASP.NET:
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/dda18ebe-7329-4b11-b535-06a123db241b" />
+
+```csharp
+  app.UseExceptionHandler();
+  app.UseHsts();
+  app.UseHttpsRedirection();
+  app.UseStaticFiles();
+  app.UseRouting();
+  app.UseCors();
+  app.UseAuthentication();
+  app.UseAuthorization();
+  app.MapControllers(); // ou MapGet(), MapRazorPages(), etc.
+```
+- a maioria dos middlewares começam com 'Use', mas também existem os middlewares 'Map' (para criar rotas) e 'Run' (que encerra o pipeline)
+```csharp
+  app.UseLogTempo();
+
+  app.MapGet("/", () => "Hello World!");
+
+  app.Run();
+```
 
 
 
@@ -81,7 +103,6 @@
 
 
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/dda18ebe-7329-4b11-b535-06a123db241b" />
 
  
 
@@ -112,4 +133,5 @@
 - o que são minimal api
 - templates asp.net (mvc, razor pages, blazor (server e web assembly), web api...)
 - qual o padrao de pasta e arquivos de uma aplicação asp net mvc, webapi, razor pages, blazor
+- Kestrel, IIS, Nginx
 
